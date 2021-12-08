@@ -1,0 +1,446 @@
+//Before Bootstrap
+
+$primary:#B5501C;
+$secondary: #8EB9C3;
+
+//$secondary:#8EB9C3;//
+
+$accent: #DBA26F;
+
+
+// Your styles go here
+@import "~bootstrap/scss/bootstrap";
+
+
+//After Bootstrap
+
+.jumbotron {
+    color: white;
+    background-image: url("https://images.pexels.com/photos/9836581/pexels-photo-9836581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding-top: 70px;
+
+    h1 {
+        font-weight: 500;
+        font-size: 100px;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 25px;
+        font-style: italic;
+    }
+  }
+
+
+
+  .about-jumbotron {
+    background-image: url("https://images.pexels.com/photos/4350225/pexels-photo-4350225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding-top: 70px;
+
+    }
+
+    .navbar {
+    margin: 0;
+    }
+
+    .form-group {
+        background-color: $primary;
+        padding-left:40px;
+        padding-right:40px;
+        padding-top: 70px;
+        padding-bottom: 130px;
+
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left:25%;
+        margin-right: 25%;
+        color: white;
+        box-shadow: 1px 1px 4px #ccc;
+        
+        button {
+            float:right;
+            margin-top:30px;
+            margin-bottom:50px;
+        }
+    }
+
+   
+
+  // Mobile View //
+  @media only screen and (max-width: 576px) {
+
+
+    .featured-cards {
+        margin: 30px;
+
+    h2 {
+        color: $primary;
+        text-align: center;
+        padding:15px;
+    }
+
+    .card {
+        margin:25px;
+        box-shadow: 1px 1px 4px #ccc;
+    
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+    }
+        
+    }
+
+    .discover-shops {
+
+        h2 {
+            color: $primary;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        p {
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        }
+
+        .card {
+            margin: 25px;
+        }
+    }
+
+    .discover-shops-row {
+        .card {
+            margin:25px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+    }
+
+    .shop-categories{
+        margin: 25px;
+
+        h2 {
+            color: $primary;
+            text-align: center;
+            padding-top:30px;
+            padding-bottom: 15px;
+        }
+
+    }
+
+    .shop-categories-row {
+        margin: 25px;
+        .card { 
+            box-shadow: 1px 1px 4px #ccc;
+        }
+    }
+
+    .about {
+        margin: 20px;
+
+        h3 {
+            color:$primary;
+            text-align: center;
+        }
+    }
+
+    .impact {
+        margin: 20px;
+        h3 {
+            color:$primary;
+            text-align: center;
+        }
+    }
+
+    footer {
+        background-color: $secondary;
+    }
+    
+    .about-jumbotron {
+        h1 {
+            font-weight: 500;
+            font-size: 65px; 
+        }     
+  }
+
+
+  }
+
+// Tablet View //
+  @media only screen and (min-width: 576px) 
+  {
+    body {
+      background-color: white;
+    }
+
+    .featured-cards {
+        padding-bottom: 100px;
+
+        h2 {
+            text-align: center;
+            color: $primary;
+            padding-top: 5%;
+            padding-bottom: 3%;
+        }
+
+        .card{
+            margin: 10px;
+            box-shadow: 1px 1px 4px #ccc;
+
+            h5 {
+                font-size: 16px;;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+    .page-footer {
+        background-color: #8EB9C3;
+        color: white;
+    
+        margin-top:auto;
+        float:bottom;
+    }
+    .discover-shops {
+        margin-left: 10px;
+        margin-right: 10px;
+
+
+        h2 {
+            padding-top: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            color: $primary
+        }
+
+        p {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 30px;
+           
+        }
+    }
+
+    .discover-shops-row {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 80px;
+    }
+
+
+    .shop-categories {
+        padding-top: 50px;
+        
+        h2 {
+            color: $primary;
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
+
+        .card-group {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+
+        .shop-categories-row {
+
+            padding-bottom: 80px;
+
+            .card-group {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+
+    .about-jumbotron {
+        h1 {
+            font-weight: 500;
+            font-size: 65px; 
+        }     
+  }
+
+    .about-content{
+
+        .about {
+            padding-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+        h3 {
+            color: $primary;
+            text-align: center;
+        }
+
+        }
+
+        .impact {
+            padding-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        h3 {
+            color: $primary;
+            text-align: center;
+        }
+
+
+        }
+    }
+
+  
+// Desktop View //
+  @media only screen and (min-width: 992px) {
+    body {
+      background-color:white;
+    
+
+    .featured-cards {
+        padding-bottom: 100px;
+
+        h2 {
+            text-align: center;
+            padding-top: 75px;
+            padding-bottom: 30px;
+            color: $primary;
+        }
+
+        .card {
+            margin: 20px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    }
+
+    .discover-shops {
+        padding-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        
+
+        h2 {
+            text-align: center;
+            color: $primary;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+        }
+
+        .card {
+            margin: 20px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+        
+    }
+
+    .discover-shops-row {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 150px;
+
+        .card {
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+    }
+
+    
+    .shop-categories {
+        padding-top: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        h2 {
+            text-align: center;
+            color: $primary;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+        }
+
+        .card {
+            margin: 20px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+    }
+
+    .shop-categories-row {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 150px;
+
+        .card {
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+    }
+    
+   .about-jumbotron{
+    h1{
+        font-weight: 500;
+        font-size: 85px; 
+    }
+   } 
+
+    .about-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+        h3 {
+            color: $primary;
+        }
+
+        .about {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 50px;
+        }
+
+        .impact {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 50px;;
+         }
+        }
+    }
+}
+}
